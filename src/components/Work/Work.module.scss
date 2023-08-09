@@ -1,0 +1,117 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+
+        .experiences {
+            width: 100%;
+            flex-direction: column;
+            gap: 1.4rem;
+            position: relative;
+            // background: lightblue;
+            .exp {
+                
+                
+                img{
+                    // padding: 1rem;
+                    margin-top: 1rem;
+                    width: 4rem;
+                    // gap: 2rem;
+                    height: 4rem;
+                    
+                }
+                // background: lightcoral;
+                // width: 100%;
+                // justify-content: space-between;
+                // line-height: 40px;
+                // align-items: flex-start;
+                h1{
+                    text-align: center;
+                }
+                >div {
+                    flex: 1;
+                }
+                .post{
+                    display: flex; 
+                    margin-right: 2rem;
+                    gap: 3rem;
+                    font-weight: bold;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    // background-color: red;
+                    div{
+                        // background-color: lightblue;
+                        // padding: 1rem;
+                        // margin-right: 2rem;
+                        text-align: center;
+                        width: 6rem;
+                        height: 7rem;
+                        cursor: pointer;
+                        // box-shadow: .3rem .3rem .3rem .1rem $secondary ;
+                        // border: 5px 5px 5px;
+                    }
+                }
+                .role {
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    display: flex; 
+                    margin-right: 2rem;
+                    gap: 3rem;
+                    font-weight: bold;
+                    flex-wrap: wrap;
+                    // background-color: red;
+                    justify-content: center;
+                    div{
+                        // background-color: lightblue;
+                        // padding: 1rem;
+                        // margin-right: 2rem;
+                        text-align: center;
+                        width: 6rem;
+                        height: 7rem;
+                        cursor: pointer;
+                        // box-shadow: .3rem .3rem .3rem .1rem $secondary ;
+                        // border: 5px 5px 5px;
+                    }
+                }
+            }
+
+            .progressbar {
+                position: absolute;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+                left: 47.5%;
+
+                .line {
+                    position: absolute;
+                    height: 92%;
+                    width: 2px;
+                    background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+                    background-position: right;
+                    background-size: 2px 30px;
+                    background-repeat: repeat-y;
+                    left: 48%;
+                    z-index: 1;
+                    border-radius: 5px;
+                }
+
+                >div {
+                    flex: 1;
+                    padding-top: .8rem;
+                    z-index: 2;
+
+                    .circle {
+                        border-radius: 50%;
+                        background: black;
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
